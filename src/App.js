@@ -12,9 +12,21 @@ import { Route } from 'react-router-dom';
 import Navigation from './Components/Navigation';
 
 
+// header
+import NewComponent from './Components/Topbar'
+import Carousal from './Components/3D-Carousal'
+import Player from './Components/ReactPlayer'
+import Sleek from './Components/Sleek'
+import SleekCards from './Components/SleekCards'
+
 function App() {
   return (
     <div className="App">
+      <NewComponent />
+      <Player />
+      <Sleek/>
+      <SleekCards/>
+      <Carousal />
       <Container>
         <Row className="row">
           <Col xs={12}>
