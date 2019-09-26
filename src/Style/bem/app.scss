@@ -23,7 +23,7 @@
 
 body {
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Anton', sans-serif;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,19 +41,12 @@ code {
 }
 
 .fixed {
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 999;
   top: 0;
 }
 
-.navbar-brand{
-  font-family: 'Anton', sans-serif;
-  font-size: 30px;
-  color:whitesmoke !important;
-}
-
-
-.bg-light {
-  background-color: #333333eb !important;
+p{
+  font-family: 'Rubik', sans-serif;
 }

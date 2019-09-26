@@ -17,7 +17,7 @@ class Sleek extends React.PureComponent {
       slidesToScroll: 1
     };
     return (
-      <div style={{marginTop:'90px'}}>
+      <div style={{marginTop:'0px', background:`url(https://media.giphy.com/media/55gIgYWhFhgR5Uz5yf/giphy.gif) no-repeat`,backgroundSize: "cover"}}>
       <Slider {...settings}>
         {Array.from(Array(1)).map(e => (
           <div>
