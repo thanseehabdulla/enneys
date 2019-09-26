@@ -7,19 +7,25 @@ import Cards from '../Cards'
 class Sleek extends React.PureComponent{
 
     render(){
-        var settings = {
+
+      const {data} = this.props
+
+      var settings = {
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
-            autoplay:true,
+            slidesToShow: 7,
+            autoplay:false,
             slidesToScroll: 1
           };
           return (
+            <div>
+              <h2 class="tray-title">{data.category}<i class="right-arrow slide-in-left"></i></h2>
             <Slider {...settings}>
-              {Array.from(Array(10)).map(e=> <div><Cards/></div>)
+              {(data.data||[]).map(subdata=> <div><Cards data={subdata} /></div>)
               }
             </Slider>
+            </div>
         )
     }
 }
