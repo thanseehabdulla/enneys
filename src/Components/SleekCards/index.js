@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React from 'react'
 import Slider from "react-slick";
 import Cards from '../Cards'
-
+import {Link} from 'react-router-dom'
 class Sleek extends React.PureComponent{
 
     render(){
@@ -25,6 +25,8 @@ class Sleek extends React.PureComponent{
               {(data.data||[]).map(subdata=> <div><Cards data={subdata} /></div>)
               }
             </Slider>
+            <Link to="/viewlisting"><h6 className="align-right">View All </h6></Link>
+
             </div>
         )
     }

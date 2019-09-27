@@ -35,16 +35,20 @@
     -moz-transition: opacity .1s ease-in;
     -o-transition: opacity .1s ease-in;
 }
+
 .card-img-container img {
     width: 100%;
     border-radius: 5px;
 }
+
 .slick-slide img {
     display: block;
 }
+
 .slick-slide, .slick-slide * {
     outline: 0!important;
 }
+
 .lazy-img-loader {
     opacity: 0;
 }
@@ -62,3 +66,43 @@
     margin:40px 0;
     text-align: left;
 }
+
+.zoom {
+       transition: transform .4s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .card-category{
+    margin: 10px;
+    padding: 14px;
+    width: 45%;
+  }
+
+  .category{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+
+  .listing{
+      display: flex;
+      flex-flow: wrap;
+      justify-content: flex-start;
+
+      .card-margin{
+        margin: 5px;
+      }
+  }
+
+  .align-right{
+      text-align: right;
+      margin-top: 20px;
+  }
+
+  a{
+      color: black;
+      text-decoration: unset !important;
+  }

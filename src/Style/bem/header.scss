@@ -113,3 +113,16 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-light{
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 40px !important;
+    line-height: inherit;
+    white-space: nowrap;
+}
