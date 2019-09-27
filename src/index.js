@@ -9,7 +9,6 @@ import createSagaMiddleware from 'redux-saga';
 import { loadToDoList } from './redux/Actions';
 import toDoApp from './redux/Reducers';
 import rootSaga from './redux/Sagas';
-
 import Routes from './Router';
 import './Style/main.scss';
 

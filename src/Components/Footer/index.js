@@ -8,7 +8,7 @@ class Footer extends React.PureComponent {
         <div className="footer-left col-xs-12 col-sm-12 col-sm-7">
           <ul>
             <li>
-              <a href="/about-us">About Enneys</a>
+              <a href="/about-us">About Ennays</a>
             </li>
             <li>
               <a href="/terms-of-use">Terms of Use</a>
@@ -33,15 +33,15 @@ class Footer extends React.PureComponent {
             </li>
           </ul>
           <p className="copyright">
-            © 2019 Enneys. All Rights Reserved. enneys video and all
+            © 2019 Ennays. All Rights Reserved. ennays video and all
             related channel and programming logos are service marks of, and all
-            related programming visuals and elements are the property of,enneys, Inc. All rights reserved.
+            related programming visuals and elements are the property of,ennays, Inc. All rights reserved.
           </p>
         </div>
         <div className="footer-right col-xs-12 col-sm-12 col-sm-5">
           <div className="app-unit col-xs-8">
             <div className="store-wrapper">
-              <p>Enneys App</p>
+              <p>Ennays App</p>
               <a
                 className="playstore"
                 href="https://play.google.com/store/apps/details?id=in.startv.hotstar"
@@ -57,16 +57,8 @@ class Footer extends React.PureComponent {
           <div className="social-unit col-xs-3">
             <div>
               <p>Connect with us</p>
-              <a
-                className="fb"
-                href="https://www.facebook.com/hotstar"
-                target="_blank"
-              />
-              <a
-                className="tw"
-                href="https://twitter.com/hotstartweets"
-                target="_blank"
-              />
+              <i className="fab fa-google mr-2" />
+              <i className="fab fa-facebook-f mr-2" />
             </div>
           </div>
         </div>
