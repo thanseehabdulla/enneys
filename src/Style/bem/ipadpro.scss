@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1024px) {
+    
+
+    .zoom {
+        transition: unset; /* Animation */
+   }
+   
+   .zoom:hover {
+     transform: unset; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   }
+
+
+   .listing {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.copyright{
+    margin-bottom: 57px;
+    font-size: 12px;
+}
+    
+}

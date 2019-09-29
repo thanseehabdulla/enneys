@@ -12,7 +12,7 @@ class ViewCategoryContainer extends React.Component {
         <NewComponent />
         <div className="category">
           {categorydata.map ( e => <div className="card zoom card-category">
-            <Link to="/viewall"><div className="container">
+            <Link to="/viewlisting"><div className="container">
               <h4>
                 <b>{e.name}</b>
               </h4>

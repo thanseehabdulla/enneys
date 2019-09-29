@@ -122,15 +122,18 @@
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
+
 .contact-form label{
     font-weight:600;
 }
+
 .contact-form button{
     background: #25274d;
     color: #fff;
     font-weight: 600;
     width: 25%;
 }
+
 .contact-form button:focus{
     box-shadow:none;
 }
@@ -140,3 +143,9 @@
     height: 400px;
 }
 
+.viewAll{
+    p {
+        font-family: 'Rubik', sans-serif;
+        text-align: justify;
+    }
+}

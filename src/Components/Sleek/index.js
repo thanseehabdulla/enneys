@@ -14,8 +14,7 @@ class Sleek extends React.PureComponent {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      arrows:false,
-      
+      arrows:false,      
   
   // fade: true,
   // cssEase: 'linear',
@@ -37,7 +36,6 @@ class Sleek extends React.PureComponent {
             slidesToScroll: 2,
             dots: true,
             variableWidth: true,
-            width:'100%',
           }
         },
         {
@@ -55,8 +53,8 @@ class Sleek extends React.PureComponent {
       ]
     };
     return (
-      <div style={{marginTop:'0px',backgroundSize: "cover", height: '370px'}}>
-     {/* <Container> */}
+      <div>
+      {window.innerWidth > 767 && <div style={{marginTop:'0px',backgroundSize: "cover", height: '370px'}}>
       <Slider {...settings}>
         {Array.from(Array(6)).map(e => (
           <div style={{margin:'0 10px'}}>
@@ -64,7 +62,27 @@ class Sleek extends React.PureComponent {
           </div>
         ))}
       </Slider>
-      {/* </Container> */}
+      </div>}
+
+      {window.innerWidth < 768 && window.innerWidth > 320 && <div style={{marginTop:'0px',backgroundSize: "cover", height: '145px'}}>
+      <Slider {...settings}>
+        {Array.from(Array(6)).map(e => (
+          <div style={{margin:'0 10px'}}>
+           <ReactPlayer width={270} style={{margin:'0 10px'}} playing={false} url='https://vimeo.com/43401199'/>
+          </div>
+        ))}
+      </Slider>
+      </div>}
+
+      {window.innerWidth < 321 && <div style={{marginTop:'0px',backgroundSize: "cover", height: '145px'}}>
+      <Slider {...settings}>
+        {Array.from(Array(6)).map(e => (
+          <div style={{margin:'0 10px'}}>
+           <ReactPlayer width={270} style={{margin:'0 10px'}} playing={false} url='https://vimeo.com/43401199'/>
+          </div>
+        ))}
+      </Slider>
+      </div>}
       </div>
     );
   }

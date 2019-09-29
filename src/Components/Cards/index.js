@@ -21,11 +21,16 @@ class Cards extends React.Component {
 
     return (
       <div className="card-img-container card-margin">
-        <img
+        {window.innerWidth > 768 && <img
           onClick={this.onOpenModal}
           className="lazy-img-loader loaded zoom"
           src={data.imageUrl}
-        />
+        />}
+
+    {window.innerWidth < 769 && <Link to="/viewall"><img
+          className="lazy-img-loader loaded zoom"
+          src={data.imageUrl}
+        /></Link>}
 
         {this.state.open && (
           <Modal

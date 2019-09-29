@@ -1,9 +1,10 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 class Footer extends React.PureComponent {
   render() {
     return(
-    <div className="footer">
+    <div>  
+    {window.innerWidth > 1024 && <div className="footer">
       <div className="container">
         <div className="footer-left col-xs-12 col-sm-12 col-sm-7">
           <ul>
@@ -63,6 +64,24 @@ class Footer extends React.PureComponent {
           </div>
         </div>
       </div>
+      </div>}
+
+      {window.innerWidth < 1025 && 
+      <div>
+        <p className="copyright">
+            {/* © 2019 Ennays. All Rights Reserved. */}
+          </p>
+         
+      <div class="navbar-b">
+      <Link to="/">Ennays</Link>
+      <Link to="/viewcategory">All Category</Link>
+      {window.innerWidth > 767 && <div><Link to="/pricing">Pricing</Link>
+      <Link to="/support">Support</Link></div>}
+      <Link to="/signin">Login</Link>
+      
+    </div>
+</div>
+      }
     </div>)
   }
 }

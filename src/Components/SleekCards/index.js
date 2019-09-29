@@ -40,10 +40,12 @@ class Sleek extends React.PureComponent{
                 }
               },
               {
-                breakpoint: 480,
+                breakpoint: 500,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2
+                  slidesToScroll: 2,
+                  variableWidth:true,
+                  arrows:false
                 }
               }
               // You can unslick at a given breakpoint now by adding:

@@ -1,0 +1,35 @@
+@media only screen and (max-width: 320px) {
+    
+    .card-margin{
+        margin-right: 5px !important;
+    }
+    
+    .copyright{
+        margin-bottom: 57px;
+        font-size: 12px;
+    }
+
+    .card-category {
+        margin: 10px;
+        padding: 14px;
+        width: 42%;
+    }
+    .card-margin {
+        margin-right: 13px !important;
+    }
+
+    .card-img-container {
+        width: 127px;
+        min-height: 195.25px;
+    }
+
+    .card-img-container img {
+        min-width: 126px;
+        max-width: 126px;
+      }
+
+      .slick-slide, .slick-slide * {
+        outline: 0 !important;
+        height: 50% !important;
+    }
+    }

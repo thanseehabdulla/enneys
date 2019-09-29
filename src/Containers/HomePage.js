@@ -21,7 +21,7 @@ class HomePage extends React.Component {
         <Sleek />
 
         <Container>
-        <Link to="/viewcategory"><h6 className="align-right">View All Category</h6></Link>
+        {window.innerWidth > 1024 && <Link to="/viewcategory"><h6 className="align-right">View All Category</h6></Link>}
 
           {CardArray.map(data => (
             <Row className="row">
